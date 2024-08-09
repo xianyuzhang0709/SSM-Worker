@@ -47,8 +47,7 @@
     </script>
 </head>
 <body>
-<br>
-<h2>所有用户信息表</h2><br>
+<h2>所有用户信息表</h2>
 <table border="1px">
     <tr>
         <th>wid</th>

@@ -15,8 +15,5 @@
 <form action="showall.action">
     <input type="submit" value="查看所有用户">
 </form>
-<a href="showall.action">
-    <input type="button" value="查看">
-</a>
 </body>
 </html>

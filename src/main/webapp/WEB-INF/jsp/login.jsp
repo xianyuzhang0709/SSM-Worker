@@ -12,9 +12,9 @@
 </head>
 <body>
 <h2>Welcome to Login!</h2>
-<form action="loginDeal.action">
-    username:<input type="text" name="username"><br>
-    password:<input type="password" name="password"><br>
+<form action="loginDeal.action" method="post">
+    username：<input type="text" name="username"><br>
+    password：<input type="password" name="password"><br>
     <input type="submit" value="login"/>
     <a href="regist.action"><input type="button" value="注册"></a>
 </form>
