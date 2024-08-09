@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.model.dao.WorkerMapper">
+
+<!-- Worker selectByNameAndPwd(Worker worker);-->
+    <select id="selectByNameAndPwd" parameterType="Worker" resultType="Worker">
+        select * from worker where username=#{username} and password=#{password}
+    </select>
+
+<!-- void insertWorker(Worker worker);-->
+    <insert id="insertWorker" parameterType="Worker">
+        insert into worker(wid,username,password) values(#{wid},#{username},#{password})
+    </insert>
+
+<!-- List<Worker> getAllWorkers();-->
+    <select id="getAllWorkers" resultType="Worker">
+        select * from worker
+    </select>
+
+<!-- void updateWorker(Worker worker);   -->
+    <update id="updateWorker" parameterType="Worker">
+        update worker set username=#{username},password=#{password} where wid=#{wid}
+    </update>
+
+<!-- void deleteWorker(Integer wid);-->
+    <delete id="deleteWorker" parameterType="Integer">
+        delete from worker where wid=#{0}
+    </delete>
+
+</mapper>
